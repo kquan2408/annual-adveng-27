@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Plan 2027 - Advanced English 12th Grade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1F3C88;
+        }
+        .bg-institutional {
+            background-color: #1F3C88;
+        }
+        .bg-secondary-blue {
+            background-color: #3F72AF;
+        }
+        .text-institutional {
+            color: #1F3C88;
+        }
+        .border-institutional {
+            border-color: #1F3C88;
+        }
+        .tab-active {
+            background-color: #F2C94C !important;
+            color: #1F3C88 !important;
+            font-weight: 700;
+        }
+        .tab-inactive {
+            background-color: #3F72AF;
+            color: #FFFFFF;
+        }
+        .tab-inactive:hover {
+            background-color: #2c5282;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="bg-institutional text-white shadow-md p-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-4">
+            <img src="https://admisiones.colegiomontano.edu.gt/assets/img/logo-cm-blanco.webp" alt="Colegio Montano Logo" style="max-height: 50px;" onerror="this.src='https://placehold.co/150x50/1F3C88/FFFFFF?text=Colegio+Montano'">
+            <div>
+                <h1 class="text-xl font-bold tracking-wide">Colegio Montano Cortijo</h1>
+                <p class="text-sm italic opacity-90"><i>Institutional Pedagogical Planning Dashboard - 2027</i></p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-sm bg-white/10 px-4 py-2 rounded-lg">
+            <div><i>Course:</i> <b>Advanced English</b></div>
+            <div><i>Grade:</i> <b>12th Grade</b></div>
+            <div><i>Teacher:</i> <b>Miss Karla Quan</b></div>
+            <div><i>Year:</i> <b>2027</b></div>
+        </div>
+
+        <button onclick="toggleFullScreen()" class="bg-[#F2C94C] text-[#1F3C88] font-bold px-4 py-2 rounded-lg shadow hover:opacity-90 transition flex items-center gap-2">
+            <span>🖥️</span> <i>Fullscreen</i>
+        </button>
+    </header>
+
+    <nav class="bg-[#3F72AF] p-2 shadow-inner overflow-x-auto">
+        <div class="max-w-7xl mx-auto flex gap-2 min-w-max">
+            <button onclick="switchTab('descriptor')" id="btn-descriptor" class="tab-active px-4 py-2 rounded-md font-medium transition text-sm"><i>I) Descriptor</i></button>
+            <button onclick="switchTab('objectives')" id="btn-objectives" class="tab-inactive px-4 py-2 rounded-md font-medium transition text-sm"><i>II) Objectives</i></button>
+            <button onclick="switchTab('competencies')" id="btn-competencies" class="tab-inactive px-4 py-2 rounded-md font-medium transition text-sm"><i>III) Competencies</i></button>
+            <button onclick="switchTab('indicators')" id="btn-indicators" class="tab-inactive px-4 py-2 rounded-md font-medium transition text-sm"><i>IV) Indicators</i></button>
+            <button onclick="switchTab('methods')" id="btn-methods" class="tab-inactive px-4 py-2 rounded-md font-medium transition text-sm"><i>V) Didactic Methods</i></button>
+            <button onclick="switchTab('bibliography')" id="btn-bibliography" class="tab-inactive px-4 py-2 rounded-md font-medium transition text-sm"><i>VI) Bibliography</i></button>
+            <button onclick="switchTab('contents')" id="btn-contents" class="tab-inactive px-4 py-2 rounded-md font-medium transition text-sm"><i>VII) Contents</i></button>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto p-6 md:p-8">
+
+        <!-- TAB I: DESCRIPTOR -->
+        <section id="tab-descriptor" class="tab-content space-y-6">
+            <div class="border-l-4 border-institutional pl-4">
+                <h2 class="text-2xl font-bold text-institutional"><i>I) Course Descriptor</i></h2>
+                <p class="text-sm text-gray-600 italic"><i>English Advanced - 12th Grade</i></p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 space-y-4">
+                <p class="leading-relaxed">
+                    <i>English Advanced is a course designed to strengthen and develop students’ English language proficiency through the integrated practice of the four main language skills: reading, listening, writing, and speaking, as well as vocabulary development.</i>
+                </p>
+                <p class="leading-relaxed">
+                    <i>The course uses Oxford Discover Futures as a supplementary learning resource to help students develop their language competencies through a variety of activities and exercises that encourage meaningful learning, application, and practice.</i>
+                </p>
+                <div class="grid md:grid-cols-3 gap-4 pt-4">
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-institutional mb-2"><i>Section A (A1–B1)</i></h3>
+                        <p class="text-sm"><i>Students develop foundational English skills and strengthen their ability to understand and communicate in familiar and everyday situations. They expand their vocabulary and improve their reading, listening, writing, and speaking skills through guided practice.</i></p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-institutional mb-2"><i>Section B (B2–Low C1)</i></h3>
+                        <p class="text-sm"><i>Students strengthen their intermediate to advanced English skills by developing greater fluency, expanding their vocabulary, understanding more complex texts, expressing ideas clearly, and producing more organized written and spoken communication.</i></p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <h3 class="font-bold text-institutional mb-2"><i>Section C (High C1–C2)</i></h3>
+                        <p class="text-sm"><i>Students refine their advanced English proficiency by engaging in complex reading and listening tasks, producing sophisticated written texts, expressing nuanced ideas fluently and accurately, and using a wide range of vocabulary.</i></p>
+                    </div>
+                </div>
+                <div class="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-institutional mb-2"><i>Key Pedagogical Principles</i></h3>
+                    <ul class="list-disc list-inside text-sm space-y-1">
+                        <li><i>Inquiry-based learning</i></li>
+                        <li><i>Student-centered learning</i></li>
+                        <li><i>Exploration of global values and perspectives</i></li>
+                        <li><i>A focus on critical thinking rather than memorization</i></li>
+                        <li><i>Building strong student-teacher relationships and reflection</i></li>
+                        <li><i>Cooperation, collaboration, and synergy</i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB II: OBJECTIVES -->
+        <section id="tab-objectives" class="tab-content hidden space-y-6">
+            <div class="border-l-4 border-institutional pl-4">
+                <h2 class="text-2xl font-bold text-institutional"><i>II) General Objectives</i></h2>
+                <p class="text-sm text-gray-600 italic"><i>Core linguistic and communicative goals for 2027</i></p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-100 flex items-start gap-4">
+                    <span class="bg-[#1F3C88] text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">1</span>
+                    <div>
+                        <h3 class="font-bold text-institutional"><i>Reading Proficiency</i></h3>
+                        <p class="text-sm text-gray-700 mt-1"><i>To improve Reading skills through advanced text analysis and critical strategies.</i></p>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-100 flex items-start gap-4">
+                    <span class="bg-[#1F3C88] text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">2</span>
+                    <div>
+                        <h3 class="font-bold text-institutional"><i>Academic Word List (AWL)</i></h3>
+                        <p class="text-sm text-gray-700 mt-1"><i>To apply AWL vocabulary correctly in different prepared academic activities.</i></p>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-100 flex items-start gap-4">
+                    <span class="bg-[#1F3C88] text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">3</span>
+                    <div>
+                        <h3 class="font-bold text-institutional"><i>Listening Comprehension</i></h3>
+                        <p class="text-sm text-gray-700 mt-1"><i>To improve Listening skills and evaluate complex spoken materials.</i></p>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-100 flex items-start gap-4">
+                    <span class="bg-[#1F3C88] text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">4</span>
+                    <div>
+                        <h3 class="font-bold text-institutional"><i>Speaking & Public Speech</i></h3>
+                        <p class="text-sm text-gray-700 mt-1"><i>To improve Speaking skills and public speech delivery with confidence and fluency.</i></p>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-100 flex items-start gap-4">
+                    <span class="bg-[#1F3C88] text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">5</span>
+                    <div>
+                        <h3 class="font-bold text-institutional"><i>Writing Skills</i></h3>
+                        <p class="text-sm text-gray-700 mt-1"><i>To improve Writing skills, producing persuasive, analytical, and structured texts.</i></p>
+                    </div>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md border border-gray-100 flex items-start gap-4">
+                    <span class="bg-[#1F3C88] text-white font-bold w-8 h-8 rounded-full flex items-center justify-center shrink-0">6</span>
+                    <div>
+                        <h3 class="font-bold text-institutional"><i>Synergy & Oxford Futures</i></h3>
+                        <p class="text-sm text-gray-700 mt-1"><i>To synergize applying different language skills taking full advantage of Oxford Discover Futures 5 & 6.</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB III: COMPETENCIES -->
+        <section id="tab-competencies" class="tab-content hidden space-y-6">
+            <div class="border-l-4 border-institutional pl-4">
+                <h2 class="text-2xl font-bold text-institutional"><i>III) Academic Competencies, Achievement Indicators & CM Competencies</i></h2>
+                <p class="text-sm text-gray-600 italic"><i>Subject competencies combined with Colegio Montano institutional standards</i></p>
+            </div>
+
+            <!-- Subject Academic Competencies & Achievement Indicators -->
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-institutional text-white p-4 font-bold"><i>Academic Competencies & Achievement Indicators</i></div>
+                <div class="p-4 space-y-6">
+                    <div class="border-b pb-4">
+                        <h3 class="font-bold text-institutional text-lg mb-2"><i>1. Conversational & Informational Exchange</i></h3>
+                        <p class="text-sm text-gray-600 mb-2"><i>Generates conversations to exchange specific information about learning and environment topics orally and written.</i></p>
+                        <ul class="list-disc list-inside text-sm space-y-1 pl-4 text-gray-700">
+                            <li><i>Proposes oral and written conversation to exchange essential and personal information about everyday topics.</i></li>
+                            <li><i>Uses culturally acceptable vocabulary, idiomatic expressions, and gestures.</i></li>
+                            <li><i>Expresses wants, doubts, uncertainty, and needs using learned material orally and written.</i></li>
+                            <li><i>Answers questions posed both orally and written.</i></li>
+                        </ul>
+                    </div>
+
+                    <div class="border-b pb-4">
+                        <h3 class="font-bold text-institutional text-lg mb-2"><i>2. Text Production & Grammar Accuracy</i></h3>
+                        <p class="text-sm text-gray-600 mb-2"><i>Produces oral or written texts independently to communicate needs and learning purposes with appropriate grammar and vocabulary.</i></p>
+                        <ul class="list-disc list-inside text-sm space-y-1 pl-4 text-gray-700">
+                            <li><i>Speaks using accurate vocabulary, pronunciation, and grammar.</i></li>
+                            <li><i>Requests help or information for researching purposes.</i></li>
+                            <li><i>Makes inferences from simple or complex oral and/or written passages.</i></li>
+                            <li><i>Makes daily journal entries in short writings and composes texts with accurate grammar, spelling, and vocabulary.</i></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-institutional text-lg mb-2"><i>3. Cultural Engagement & Interculturality</i></h3>
+                        <p class="text-sm text-gray-600 mb-2"><i>Improves ability to engage with other cultures and develops effectively in global environments.</i></p>
+                        <ul class="list-disc list-inside text-sm space-y-1 pl-4 text-gray-700">
+                            <li><i>Interacts with other cultures respecting differences and diversity.</i></li>
+                            <li><i>Uses cultural contributions of other people to enrich their own culture.</i></li>
+                            <li><i>Compares festivity activities in English-speaking countries with Guatemalan holiday traditions.</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixed CM Competencies -->
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-[#3F72AF] text-white p-4 font-bold"><i>Colegio Montano Institutional Competencies (CM Competencies - Fixed)</i></div>
+                <div class="p-6 grid md:grid-cols-2 gap-4">
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>1. Critical thinking and problem solving</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>2. Collaboration and teamwork</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>3. Digital competencies</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>4. Effective communication</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>5. Creativity and innovation</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>6. Autonomous learning and adaptability</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>7. Global and cultural awareness</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>8. Ethics and digital citizenship</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>9. Emotional management and resilience</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border"><i>10. Ecological awareness and sustainability</i></div>
+                    <div class="p-3 bg-gray-50 rounded-lg border md:col-span-2"><i>11. Leadership role performance</i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB IV: INDICATORS -->
+        <section id="tab-indicators" class="tab-content hidden space-y-6">
+            <div class="border-l-4 border-institutional pl-4">
+                <h2 class="text-2xl font-bold text-institutional"><i>IV) Achievement Indicators & Evaluation Criteria</i></h2>
+                <p class="text-sm text-gray-600 italic"><i>Criteria of evaluation and performance benchmarks</i></p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 space-y-4">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-4 bg-blue-50/50 rounded-lg border border-blue-100">
+                        <h3 class="font-bold text-institutional mb-2"><i>Oral & Conversational Assessment</i></h3>
+                        <p class="text-sm text-gray-700"><i>Evaluates oral fluency, accuracy in pronunciation, structured arguments during public speaking sessions, and interactive exchanges during group discussions and peer work.</i></p>
+                    </div>
+                    <div class="p-4 bg-blue-50/50 rounded-lg border border-blue-100">
+                        <h3 class="font-bold text-institutional mb-2"><i>Written & Analytical Assessment</i></h3>
+                        <p class="text-sm text-gray-700"><i>Measures correctness in complex grammar structures (cleft sentences, participle clauses, noun clauses), persuasive essay writing, and proper academic referencing.</i></p>
+                    </div>
+                    <div class="p-4 bg-blue-50/50 rounded-lg border border-blue-100">
+                        <h3 class="font-bold text-institutional mb-2"><i>Research & Listening Evaluation</i></h3>
+                        <p class="text-sm text-gray-700"><i>Assesses the student's ability to apply the SQ3R method for research, evaluate scientific credibility, extract specific information from lectures, and synthesize specialist vocabulary.</i></p>
+                    </div>
+                    <div class="p-4 bg-blue-50/50 rounded-lg border border-blue-100">
+                        <h3 class="font-bold text-institutional mb-2"><i>Soft Skills & Project Work</i></h3>
+                        <p class="text-sm text-gray-700"><i>Appraises leadership performance, teamwork coordination, emotional intelligence in conflict resolution, and the execution of collaborative unit projects such as launching a business product.</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB V: METHODS -->
+        <section id="tab-methods" class="tab-content hidden space-y-6">
+            <div class="border-l-4 border-institutional pl-4">
+                <h2 class="text-2xl font-bold text-institutional"><i>V) Didactic Methodology (Colegio Montano Fixed Institutional Model)</i></h2>
+                <p class="text-sm text-gray-600 italic"><i>Active-collaborative model & Double Period (70 minutes) structure</i></p>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div class="bg-institutional text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">1</div>
+                    <h3 class="font-bold text-institutional text-sm mb-1"><i>Motivating Intro</i></h3>
+                    <p class="text-xs text-gray-600"><i>Activation of presaberes through games, dynamization, and brainstorming.</i></p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div class="bg-institutional text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">2</div>
+                    <h3 class="font-bold text-institutional text-sm mb-1"><i>Individual Work</i></h3>
+                    <p class="text-xs text-gray-600"><i>Development of individual potentialities, skills, and personal destreza.</i></p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div class="bg-institutional text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">3</div>
+                    <h3 class="font-bold text-institutional text-sm mb-1"><i>Teamwork</i></h3>
+                    <p class="text-xs text-gray-600"><i>Interaction with defined roles under the motto "all for one and one for all".</i></p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div class="bg-institutional text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">4</div>
+                    <h3 class="font-bold text-institutional text-sm mb-1"><i>Plenary Session</i></h3>
+                    <p class="text-xs text-gray-600"><i>Public exhibition, socratic dialogue, and prior home reading review.</i></p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div class="bg-[#F2C94C] text-[#1F3C88] font-bold rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">★</div>
+                    <h3 class="font-bold text-institutional text-sm mb-1"><i>Key Methods</i></h3>
+                    <p class="text-xs text-gray-600"><i>Project-Based Learning (PBL) and Constructivism with Public Speaking.</i></p>
+                </div>
+            </div>
+
+            <!-- Soft Skills integration table -->
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden mt-6">
+                <div class="bg-institutional text-white p-4 font-bold"><i>Soft Skills (20/20 Skills) Integration</i></div>
+                <div class="p-6">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-gray-100 text-institutional uppercase text-xs">
+                                <tr>
+                                    <th class="p-3"><i>Skill</i></th>
+                                    <th class="p-3"><i>Class Implementation</i></th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Complex Problem Solving</i></td>
+                                    <td class="p-3 text-gray-600"><i>Applying the different reading skills developed in each lesson.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Critical Thinking</i></td>
+                                    <td class="p-3 text-gray-600"><i>Applying life skills by promoting inquiry-based learning to maximize student involvement and teamwork.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Creativity</i></td>
+                                    <td class="p-3 text-gray-600"><i>Preparing presentations and public speaking projects.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>People Management</i></td>
+                                    <td class="p-3 text-gray-600"><i>Each class works in groups where different roles are assigned at each opportunity.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Coordination with Others</i></td>
+                                    <td class="p-3 text-gray-600"><i>Group presentations gathered and evaluated collaboratively by the teacher and peers.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Emotional Intelligence</i></td>
+                                    <td class="p-3 text-gray-600"><i>Intervening to teach conflict resolution: empathy, accepting guilt, proposing solutions without hurting feelings.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Judgment & Decision-Making</i></td>
+                                    <td class="p-3 text-gray-600"><i>Guiding students with options when facing difficulties so they choose the best suited path.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Service Orientation</i></td>
+                                    <td class="p-3 text-gray-600"><i>Sharing materials, helping classmates, and assigning roles for common group benefit.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Negotiation</i></td>
+                                    <td class="p-3 text-gray-600"><i>Encouraging students to give their point of view and negotiate activities coupled with commitments.</i></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 font-medium"><i>Cognitive Flexibility</i></td>
+                                    <td class="p-3 text-gray-600"><i>Adapting learning approaches to diverse course activities.</i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB VI: BIBLIOGRAPHY -->
+        <section id="tab-bibliography" class="tab-content hidden space-y-6">
+            <div class="border-l-4 border-institutional pl-4">
+                <h2 class="text-2xl font-bold text-institutional"><i>VI) Bibliography & Resources</i></h2>
+                <p class="text-sm text-gray-600 italic"><i>Core texts and curricular references</i></p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex items-center gap-6">
+                <div class="bg-blue-100 text-institutional p-4 rounded-xl text-3xl font-bold">📚</div>
+                <div>
+                    <h3 class="text-lg font-bold text-institutional"><i>Oxford Discover Futures 6</i></h3>
+                    <p class="text-sm text-gray-600 mt-1"><i>Primary textbook and resource suite utilized for advanced language acquisition, critical inquiry units, and life skills integration.</i></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB VII: CONTENTS -->
+        <section id="tab-contents" class="tab-content hidden space-y-6">
+            <div class="border-l-4 border-institutional pl-4">
+                <h2 class="text-2xl font-bold text-institutional"><i>VII) Course Contents by Units</i></h2>
+                <p class="text-sm text-gray-600 italic"><i>Thematic sequencing and skill focus</i></p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- UNIT 1 -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <div class="bg-institutional text-white p-4 font-bold"><i>Unit 1: Language & Architecture</i></div>
+                    <div class="p-4 space-y-4 text-sm">
+                        <div>
+                            <p class="font-bold text-institutional"><i>How does language shape our world?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Dealing with long paragraphs</i></li>
+                                <li><i>GR: Cleft sentences for emphasis</i></li>
+                                <li><i>Life Skill: Becoming an autonomous learner</i></li>
+                                <li><i>WRT: How to write persuasively</i></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-bold text-institutional"><i>How are precision and perspective important?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Combining skimming and scanning</i></li>
+                                <li><i>GR: Speculative language; Adverbs of degree</i></li>
+                                <li><i>Life Skill: Keeping things in perspective</i></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-bold text-institutional"><i>How does architecture shape our lives?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Reading for a specific audience</i></li>
+                                <li><i>GR: Participle clauses</i></li>
+                                <li><i>Life Skill: Inclusivity</i></li>
+                                <li><i>WRT: Creating a vivid sense of place</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UNIT 2 -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <div class="bg-institutional text-white p-4 font-bold"><i>Unit 2: Plants, Business & Medicine</i></div>
+                    <div class="p-4 space-y-4 text-sm">
+                        <div>
+                            <p class="font-bold text-institutional"><i>Why do plants matter?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Active reading</i></li>
+                                <li><i>GR: Real & hypothetical future tenses</i></li>
+                                <li><i>LST: Recognizing rhetorical devices</i></li>
+                                <li><i>WRT: Engaging feature articles</i></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-bold text-institutional"><i>What is business for?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Weighing arguments</i></li>
+                                <li><i>GR: Expressing priorities & preference</i></li>
+                                <li><i>WRT: Refuting counterarguments</i></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-bold text-institutional"><i>Why is medicine controversial?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: SQ3R research method</i></li>
+                                <li><i>GR: Noun clauses & referencing</i></li>
+                                <li><i>LST: Scientific credibility evaluation</i></li>
+                                <li><i><b>Project: Launching a Business Product</b></i></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-bold text-institutional"><i>How do mistakes contribute to progress?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Identifying markers that clarify meaning</i></li>
+                                <li><i>GR: Phrasal verbs; The meaning of particles</i></li>
+                                <li><i>LST: Listening for specific information to complete a chart</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UNIT 3 -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <div class="bg-institutional text-white p-4 font-bold"><i>Unit 3: Night, Rural Areas & Performance</i></div>
+                    <div class="p-4 space-y-4 text-sm">
+                        <div>
+                            <p class="font-bold text-institutional"><i>How is our world different at night?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Identifying writer’s position</i></li>
+                                <li><i>GR: Passive structures for emphasis</i></li>
+                                <li><i>LST: Predicting content</i></li>
+                                <li><i>A cause-and-effect essay</i></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-bold text-institutional"><i>What is the future for rural areas?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Building specialist vocabulary</i></li>
+                                <li><i>GR: Expressing reason and result; Expressing contrast</i></li>
+                                <li><i>LST: Reviewing notes after a lecture</i></li>
+                                <li><i>WRT: Adding complexity with noun phrases</i></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-bold text-institutional"><i>Why do we perform?</i></p>
+                            <ul class="list-disc list-inside text-gray-600 pl-2 mt-1 space-y-1">
+                                <li><i>RD: Increasing reading speed</i></li>
+                                <li><i>GR: Obligation, concession with may/might</i></li>
+                                <li><i>Life Skill: Giving an effective presentation</i></li>
+                                <li><i>WRT: Justifying your evaluation</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(el => el.classList.add('hidden'));
+
+            // Remove active style from all buttons
+            const buttons = document.querySelectorAll('nav button');
+            buttons.forEach(el => {
+                el.classList.remove('tab-active');
+                el.classList.add('tab-inactive');
+            });
+
+            // Show selected tab content
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+
+            // Highlight selected button
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.remove('tab-inactive');
+            activeBtn.classList.add('tab-active');
+        }
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    alert(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
+</body>
+</html>
